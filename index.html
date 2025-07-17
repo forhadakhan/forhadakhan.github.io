@@ -1,227 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forhad Khan</title>
-    <style>
-        :root {
-            --primary-color: #2563eb;
-            --primary-hover: #1d4ed8;
-            --text-color: #1e293b;
-            --light-gray: #f8fafc;
-            --white: #ffffff;
-            --black: #101411;
-            --transition: all 0.3s ease;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        }
-
-        body {
-            background-color: var(--light-gray);
-            color: var(--text-color);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            line-height: 1.6;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .logo-container {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .logo-svg {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-
-        .fallback-logo {
-            width: 100%;
-            height: 100%;
-            background-color: var(--primary-color);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 3rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: var(--text-color);
-        }
-        
-
-        h2 {
-            font-size: 0.8rem;
-            font-weight: 400;
-            margin-bottom: 1.5rem;
-            color: var(--text-color);
-        }
-
-        .btn-container {
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-            margin-top: 2rem;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            font-weight: 500;
-            text-decoration: none;
-            transition: var(--transition);
-            cursor: pointer;
-            border: none;
-            width: 100%;
-            max-width: 300px;
-            margin: 0 auto;
-        }
-
-        .btn-primary {
-            background-color: var(--primary-color);
-            color: var(--white);
-        }
-
-        .btn-primary:hover {
-            background-color: var(--primary-hover);
-            transform: translateY(-2px);
-        }
-
-        .btn-outline {
-            background-color: var(--white);
-            color: var(--primary-color);
-            border: 1px solid var(--primary-color);
-        }
-
-        .btn-github:hover {
-            background-color: rgb(16, 20, 17);
-            color: var(--white);
-            transform: translateY(-2px);
-        }
-        
-        .btn-linkedin:hover {
-            background-color: rgb(42, 102, 188);
-            color: var(--white);
-            transform: translateY(-2px);
-        }
-
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            margin-top: 3rem;
-            font-size: 0.875rem;
-            color: #64748b;
-        }
-
-        @media (max-width: 768px) {
-            main {
-                padding: 1.5rem;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            h2 {
-                font-size: 0.65rem;
-            }
-            
-            .logo-container {
-                width: 100px;
-                height: 100px;
-                margin-bottom: 1.5rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .btn-container {
-                gap: 0.5rem;
-            }
-            
-            .btn {
-                padding: 0.65rem 1.25rem;
-            }
-        }
-    </style>
+    <meta name="description" content="Forhad Khan is a full-stack software engineer. He serves global clients with frontend and backend development, process automation, API and AI integration." />
+    <meta name="author" content="Forhad Khan" />
+    <link rel="canonical" href="https://forhadakhan.github.io" />
+    <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Forhad Khan",
+            "url": "https://forhadakhan.github.io",
+            "jobTitle": "Full-Stack Software Engineer",
+            "knowsAbout": [
+                "Full-Stack Software Development",
+                "Web Development",
+                "Front-end Development",
+                "Backend Development",
+                "Web Application Development",
+                "Artificial Intelligence",
+                "Machine Learning",
+                "Process Automation",
+                "DevOps",
+                "Cloud Technology",
+                "Python",
+                "API Development", ,
+                "IT Support",
+                "IT Service",
+                "IT Consulting",
+                "Tech Support"
+            ]
+        }
+    </script>
 </head>
-<body>
-    <main>
-        <div class="logo-container">
-            <object type="image/svg+xml" data="./img/fk.svg" class="logo-svg">
-                <div class="fallback-logo">FK</div>
-            </object>
-        </div>
-        
-        <h1>FORHAD KHAN</h1>
-        
-        <h2>Building digital experiences that make an impact.</h2>
-        
-        <div class="btn-container">
-            <a href="https://www.forhadakhan.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Visit my website
-            </a>
-            <a href="https://github.com/forhadakhan" class="btn btn-outline btn-github" target="_blank" rel="noopener noreferrer">
-                GitHub
-            </a>
-            <a href="https://linkedin.com/in/forhadakhan" class="btn btn-outline btn-linkedin" target="_blank" rel="noopener noreferrer">
-                LinkedIn
-            </a>
-        </div>
-    </main>
-    
-    <footer>
-        <small>
-        © Forhad Khan. All rights reserved.
-        </small>
-    </footer>
 
+<body>
+    <header class="sr-only">
+        <h1>Forhad Khan,
+            Full-Stack Software Engineer</h1>
+        <p>Forhad Khan,
+            also known as <strong>forhadakhan</strong>,
+            is a computer science graduate and a professional <strong>full-stack software engineer</strong> based in Bangladesh.</p>
+        <p>He specializes in web development,
+            process automation,
+            and advanced technologies such as artificial intelligence (AI) and machine learning (ML). Passionate about building impactful digital solutions for better experiences,
+            he continuously expands his skills in <strong>cloud, DevOps and scalable software architecture</strong>.</p>
+    </header>
+    <main>
+        <div class="logo-container"><object type="image/svg+xml" data="./img/fk.svg" class="logo-svg" aria-label="Forhad Khan logo">
+                <div class="fallback-logo">FK</div>
+            </object></div>
+        <span class="title">Forhad Khan</span>
+        <p class="sub-title">Building digital experiences that make an impact.</p>
+        <h2 class="sr-only">Forhad Khan is a full-stack software engineer with deep expertise in developing scalable web applications. A Computer Science graduate from Bangladesh, he now provides professional development services to clients around the globe, delivering cutting-edge solutions in software engineering, AI integration and process automation.</h2>
+        <nav class="btn-container" aria-label="Social media and website links">
+            <ul class="link-list">
+                <li><a href="https://www.forhadakhan.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit my website </a></li>
+                <li><a href="https://github.com/forhadakhan" class="btn btn-outline btn-github" target="_blank" rel="noopener noreferrer">GitHub </a></li>
+                <li><a href="https://linkedin.com/in/forhadakhan" class="btn btn-outline btn-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn </a></li>
+            </ul>
+        </nav>
+    </main>
+    <footer><small>
+            &copy;
+            Forhad Khan. All rights reserved. </small></footer>
     <script>
-        // SVG fallback if object fails to load
         document.addEventListener('DOMContentLoaded', function() {
             const svgObject = document.querySelector('.logo-svg');
             const fallbackLogo = document.querySelector('.fallback-logo');
-            
+
+            // Listen for 'error' event to show fallback
             svgObject.addEventListener('error', function() {
                 fallbackLogo.style.display = 'flex';
             });
-            
-            // Check if svg failed to load after 1 second
+
+            // Check if SVG failed to load after 1 second (alternative check)
             setTimeout(function() {
-                if (!svgObject.hasChildNodes()) {
-                    fallbackLogo.style.display = 'flex';
+                    if (!svgObject.contentDocument || !svgObject.contentDocument.documentElement) {
+                        fallbackLogo.style.display = 'flex';
+                    }
                 }
-            }, 1000);
+
+                , 1000);
         });
     </script>
 </body>
-</html>
 
+</html>
