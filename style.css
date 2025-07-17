@@ -60,25 +60,46 @@ main {
     font-size: 3rem;
 }
 
-h1 {
+.title {
     font-size: 2.5rem;
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: 1.5rem;
     color: var(--text-color);
 }
 
-h2 {
-    font-size: 0.82rem;
-    font-weight: 400;
-    margin-bottom: 1.5rem;
-    color: var(--text-color);
+.sub-title {
+    font-size: 1rem;
 }
 
-.btn-container {
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/*
+ * Start of changes to fix styling
+ */
+
+.btn-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     margin-top: 2rem;
+}
+
+.btn-container li {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
 }
 
 .btn {
@@ -93,15 +114,19 @@ h2 {
     cursor: pointer;
     border: none;
     width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
+    /* Keep width 100% to fill the <li> */
+    /* Removed margin and max-width from here */
     position: relative;
     gap: 0.5rem;
 }
 
+/*
+ * End of changes
+ */
+
 .btn-text {
     flex-grow: 1;
-    text-align: left;
+    text-align: center;
 }
 
 .btn-icon {
@@ -178,7 +203,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .btn-container {
+    .btn-container ul {
         gap: 0.5rem;
     }
 
